@@ -3,14 +3,11 @@
 ```sh
 npm create astro@latest -- --template portfolio
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/l2md3v/Planetary-Portfolio?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+![portfolio](https://media.discordapp.net/attachments/1227153776776052737/1247089362080894976/image.png?ex=665ec1f9&is=665d7079&hm=94bd9c214eacdff272b935ad7b8eb14b931611e4b511102a33d923b32346d7bb&=&format=webp&quality=lossless&width=687&height=315)
 
 ## 🧞 Commands
 
