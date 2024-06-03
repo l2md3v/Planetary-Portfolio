@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Lam Dev" description="About LamDev Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="L2mD3v at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<br>
+						Hello, I&apos;m <strong>Lam</strong>, my nickname is{" "}
+						<strong>L2mD3v</strong>, Software Developer focused on
+						client-side, user interfaces, and Developer Experience with over 7
+						years of experience.
+						</br>I Another passion in my career is to help out teammates
+						with well-written documentation about technical decisions,
+						training, and internal tooling (like CLI&apos;s, extensions, and
+						project features) to help them work faster and better. . 😊
+						</br>
+						Skilled and versatile in creating websites or web applications
+						using regular (HTML/CSS/JS) or advanced technologies such as
+						React, Svelte, or VueJs{" "}
+						<a
+						  class="underline duration-300 ease-in-out hover:text-secondary-700"
+						  href="https://github.com/l2md3v"
+						>
+						  Github 👾
+						</a>
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">my expertises.</h2>
+				<div class="content">
+					<p>I focus on all things design and web related. With each of my services, my goal is to deliver an impactful and elevating digital experience for everyone.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">my digital tool box.</h2>
+				<div class="content">
+					<p>These are my go to tech stack to make any projects happen. I am always eager of learning more about my current stack, and new technologies that could expand my horizons.</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
